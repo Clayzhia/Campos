@@ -1,0 +1,953 @@
+/* all*/
+body {
+    background-color: #F1EFE7;
+    font-family: Times New Roman;
+    color: #694E52;
+}
+
+hr {
+    height: 3px;
+    background-color: #694E52;
+}
+
+/* header */
+.container {
+    display: flex; 
+    flex-wrap: wrap;
+    width: 100%;
+    height: 75px;
+}
+
+.link {
+    margin-left: 15px;
+    font-weight: bold; 
+    text-align: center;
+    color: #694E52; 
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.boxNav {
+  padding: 20px;
+  margin: 0px 10px 0px 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.boxSearch {
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.logo {
+    box-sizing: border-box;
+    width: 166px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputSearch {
+    border-radius: 20px; 
+    padding: 8px 16px; 
+    font-size: 16px; 
+    outline: none;
+    margin-top: -170px;
+}
+
+.inputSearch:focus {
+    border: 1px solid #ccc;
+    border-color: #007bff; 
+}
+
+.btnSearch {
+    display: inline-block;
+    border-radius: 20px;
+    width: 5%;
+    cursor: pointer;
+    background-color: #F1EFE7;
+    color: #694E52;
+    border: 3px solid;
+    border-color: #694E52;
+    font-size: 150%;
+    font-family: "Baskervville";
+    text-decoration: none;
+}
+
+.btnSearch:hover {
+    background-color: #694E52;
+    color: #F1EFE7;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 600px;
+  background-color: #694E52;
+  color: #F1EFE7;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -350%;
+  left: 50%;
+  margin-left: -290px;
+  font-size: 50%;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #694E52 transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.searchContainer input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #694E52; 
+    border-radius: 5px;
+    font-family: Poppins;
+    margin-left: 15px;
+    width: 240px;
+}
+
+.searchContainer input:focus {
+    background-color: whitesmoke;
+    border: 2px solid white;
+}
+
+.searchContainer button {
+    padding: 0px;
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #694E52;
+    margin-right: 10px;
+}
+
+.search, .user, .cart {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    color: #694E52;
+}
+
+.iconsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* Index */
+.indexBody {
+	background-color: #F1EFE7;
+	font-family: "Baskervville";
+}
+
+/* Index header */
+.indexContainer {
+    display: flex;
+}
+
+.indexBox1 {
+    flex-basis: 100%;
+  	font-size: 210%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: -5px;
+    margin-left: 45px;
+}
+
+.indexBox2 {
+    flex-basis: 100%;
+    font-size: 200%;
+    justify-content: center;
+    align-items: center;
+    margin-left: -130px;
+    margin-bottom: -5px;
+    display: inline-block;
+}
+
+.indexBox3 {
+    flex-basis: 100%;
+    font-size: 210%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+    margin-bottom: -5px;
+    margin-left: -120px;
+    margin-right: 50px;
+    width: 20px;
+    display: flex;
+}
+
+.indexLogo {
+	box-sizing: border-box;
+  	width: 166px;
+  	height: 70px;
+  	display: flex;
+    margin-left: 30%;
+    margin-right: 10%;
+}
+
+.indexSearch {
+	width: 60px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: -8px;
+    margin-left: 15px;
+}
+
+.indexLink {
+    margin-left: 20px;
+    font-weight: bold; 
+    text-align: center;
+    color: #694E52; 
+    text-decoration: none;
+}
+
+.indexLink2 {
+    margin-left: 20px;
+    font-weight: bold; 
+    text-align: center;
+    color: #694E52; 
+    text-decoration: none;
+}
+
+.indexLink:hover, .indexLink2:hover 
+{
+    text-decoration: underline;
+}
+
+/* Index body */
+.indexBg{
+	display: flex;
+  	width: 100%;
+  	height: auto;
+}
+
+.indexShopNow {
+    display: inline-block;
+    border-radius: 20px;
+    width: 25%;
+    cursor: pointer;
+    background-color: #F1EFE7;
+    color: #694E52;
+    border: 3px solid;
+    border-color: #694E52;
+    font-size: 200%;
+    font-family: "Baskervville";
+    margin-top: -4%;
+    text-decoration: none;
+}
+
+.indexShopNow:hover {
+    background-color: #694E52;
+    color: #F1EFE7;
+ 
+}
+
+.indexH1 {
+	letter-spacing: 5px;
+    font-size: 450%;
+    font-weight: bold; 
+    text-align: center;
+    color: #F1EFE7; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.tagline 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+    margin-top: 10%;
+}
+
+/* Home */
+/* Home body */
+.homeMember {
+    display: block;
+  	width: 100%;
+  	height: auto; 
+}
+
+.homeVid {
+    display: block;
+  	width: 100%;
+  	height: auto;
+    margin-top: 0.5%; 
+}
+
+.homeH1 {
+    font-size: 300%;
+    font-weight: bold; 
+    text-align: center;
+    color: #694E52; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Home gallery */
+.homeContainer {
+    display: flex;
+    justify-content: space-between; /* or space-around or flex-start */
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.homeBox {
+    flex: 1; /* Make all boxes take up equal width */
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.homeBox img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures no extra space below images */
+}
+
+/* Home why lailey */
+.homeTable {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    margin-top: 5%;
+    border: none; 
+}
+
+.homeTable tr, .homeTable td {
+    border: none; 
+}
+
+.homeLogo {
+    width: 75%;
+    height: 75%;
+}
+
+.homeP {
+    color: #694E52; 
+    font-family: "Poppins";
+    font-size: 120%;
+}
+
+.homeP1 {
+    color: #694E52; 
+    font-family: "Poppins";
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.homeLink {
+    color: #694E52; 
+    font-family: "Poppins";
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/* Home audio */
+.homeAudio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #694E52; 
+    margin-bottom: 3%;
+}
+
+/* Products */
+/* Products body */
+.productsTable {
+	width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+.productsLogo {
+    width: 80%;
+    height: 80%;
+}
+
+.products {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin-top: -1%;
+    margin-bottom: -7%;
+}
+
+.products1 {
+    width: 70%;
+    margin-top: -2%;
+}
+
+.productsContainer1 {
+	padding: 10px;
+    margin: 20px 20px 20px 20px;
+    font-family: Poppins;
+}
+
+.productsImg {
+    width: 99%;
+}
+
+.productsP1 {
+    margin-right: 10px;
+    font-size: 130%;
+}
+
+.productsP2 {
+    font-size: 120%;
+}
+
+.productsP3, .productsP4 {
+    font-size: 105%;
+    margin: -1px 0px 0px 0px;
+}
+
+.productsFlw, .productsMsg {
+    margin: 0px 0px 0px 30px;
+    font-size: 100%;
+    padding: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.productsMsg {
+    margin: 0px 30px 0px 10px;
+    background-color: #EDEDED; 
+    color: #694E52; 
+    border: 1px solid;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.productsFlw {
+    background-color: #EDEDED; 
+    color: #694E52; 
+    margin: 0px 0px 0px 50px;
+    border: 1px solid;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.productsFlw.clicked {
+    background-color: #694E52; 
+    color: antiquewhite; 
+}
+
+.productsMsg:hover, .productsFlw:hover {
+    background-color: #694E52; 
+    color: #EDEDED;
+}
+
+.productsIcon {
+    width: 5%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.productsContainer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.productsBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%; 
+    height: auto;
+    margin-bottom: 1%;
+}
+
+.productsBox1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%; 
+    height: auto;
+    margin-bottom: 1%;
+    border-bottom: 2px solid;
+}
+
+.productsIcon2 { 
+    width: 20%; 
+    margin-bottom: 1%;
+    height: auto;
+}
+
+/* About Us */
+.aboutUsBg{
+    width: 100%;
+    height: auto;
+}
+
+.aboutUsH1 {
+    font-size: 300%;
+    font-weight: bold; 
+    text-align: center;
+    color: #694E52; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: -1%;
+}
+
+.aboutUsP {
+    color: #694E52; 
+    font-family: "Poppins";
+    font-size: 120%;
+    text-align: center;
+}
+
+/* Contact Us */
+.contactUsMap {
+    width: 100%;
+    height: 100%;
+    border:0;
+}
+
+.contactUsInfos {
+    border: 2px solid;
+    border-radius: 5px;
+    font-family: Poppins;
+}
+
+.contactUsH1 {
+    text-align: center;
+    margin-bottom: -0.3%;
+}
+
+.contactUsIcons {
+    width: 50px;
+    margin: 10px 0 -20px 0;
+}
+
+.contactUsP1 {
+    font-size: 130%;
+    margin-bottom: -10px;
+}
+
+.contactUsP2 {
+    font-size: 100%;
+    color: #694E52;
+}
+
+.contactUsBtn {
+    font-family: Poppins;
+    background-color: #694E52;
+    color: #F1EFE7;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 120%;
+    border: 2px solid;
+    border-color: #694E52;
+    margin-top: -20%;
+}
+
+.contactUsBtn:hover {
+    font-family: Poppins;
+    background-color: whitesmoke;
+    color: #694E52;
+    border-radius: 5px;
+    width: 50%;
+    font-size: 120%;
+    border: 2px solid;
+    border-color: #694E52;
+    margin-top: -20%;
+}
+
+.contactUsInput {
+    font-family: Poppins; 
+    width: 100%; 
+    height: 30px; 
+    font-size: 16px;
+    border: 2px solid #694E52;
+    border-radius: 5px;
+    outline: none;
+    color: #694E52;
+}
+
+.contactUsMessage {
+    resize: none; 
+    font-family: Poppins; 
+    width: 100%; 
+    height: 200px; 
+    font-size: 16px;
+    border: 2px solid #694E52;
+    border-radius: 5px;
+    outline: none;
+    color: #694E52;
+}
+
+.contactUsInput:focus, .contactUsMessage:focus {
+    background-color: whitesmoke;
+}
+
+/* Lippies */
+.lippiesCartContainer {
+    display: flex;
+    align-items: center;
+    margin: -30px 0px 0px 10px;
+}
+
+.lippiesQuantityDisplay {
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+        
+.lippiesBtn {
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #F1E2DC;
+    border: 1px solid #694E52;
+    border-radius: 10%;
+    margin: 20px 0px 0px 10px;
+}
+
+.lippiesQuantityDisplay {
+    margin: 20px 0px 0px 10px;
+}
+
+.lippiesBtn:hover {
+    background-color: #694E52;
+    color: #F1E2DC;
+}
+
+.lippiesImg {
+    width: 80%;
+    height: auto;
+    border-radius: 5%;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.lippiesH1 {
+    font-size: 300%;
+    font-weight: bold; 
+    color: #694E52; 
+    margin: -15px 0px 0px 10px;
+}
+
+.lippiesP1 {
+    font-size: 300%;
+    color: #694E52; 
+    margin: -60px 0px 0px 10px;
+    font-family: Poppins;
+}
+
+.lippiesShadesBtn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 10%;
+    height: 10%;
+    margin: -40px 0px -10px 10px;
+}
+
+.lippiesShadesBtn:hover {
+    background: #F1E2DC;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.lippiesShades {
+    width: 100%;
+    height: 100%;
+}
+
+.lippiesShadesContainer {
+    display: flex;
+}
+
+.lippiesCartBtn, .lippiesBuyBtn {
+    width: 45%;
+    height: auto;
+    font-size: 100%;
+    padding: 1%;
+    font-family: Poppins;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.lippiesCartBtn {
+    color: #694E52;
+    background-color: #F1E2DC;
+    border: 1px solid #694E52;
+    margin: -50px 0px -50px 20px;
+}
+
+.lippiesBuyBtn {
+    color: #F1E2DC;
+    background-color: #694E52;
+    border: 1px solid #694E52;
+    margin: -50px 0px 0px 20px;
+}
+
+.lippiesCartBtn:hover {
+    color: #F1E2DC;
+    background-color: #694E52;
+    border: 1px solid #694E52;
+}
+
+.lippiesBuyBtn:hover {
+    color: #694E52;
+    background-color: #F1E2DC;
+    border: 1px solid #694E52;
+}
+
+/* checkout */
+.checkoutContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.billingAddress, .orderReview {
+    width: calc(50% - 10px); /* Adjust the width as needed */
+    border: 1px solid #ccc; /* Just for visualization, remove this later */
+    padding: 10px; /* Add padding for better spacing */
+    box-sizing: border-box;
+}
+
+.orderReview {
+    font-size: 200%;
+}
+
+/* cart */
+.cart-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+        
+.cart-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-container th, .cart-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.cart-container th {
+    background-color: #f4f4f4;
+}
+
+.cart-container a {
+    text-decoration: none;
+}
+
+.total {
+    font-weight: bold;
+}
+
+/* account */
+.accountContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.signin,
+.signup {
+    padding: 20px;
+    width: 50%;
+    margin: -45px 0px 0px 0px;
+}
+
+.signup {
+    border-left: 3px solid #694E52;
+}
+
+.accountContainer h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.accountContainer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.accountContainer label {
+    margin-bottom: 5px;
+}
+
+.accountContainer input[type="email"],
+.accountContainer input[type="password"],
+.accountContainer input[type="text"] {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.accountContainer button[type="submit"] {
+    background-color: #E8D3CA;
+    color: #694E52;
+    border: 2px solid #694E52;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.accountContainer button[type="submit"]:hover {
+    background-color: #694E52;
+    border: 2px solid #694E52;
+    color: #E8D3CA;
+}
+
+.accountContainer button {
+    background-color: #0056b3;
+    margin-top: 5px;
+}
+
+.accountContainer a {
+    margin-top: 10px;
+    display: block;
+    color: #694E52;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* footer */
+.footerContainer {
+    background-color: #694E52;
+    color: #F1EFE7;
+    align-content: center;
+    margin: 20px -8px -8px -8px;
+}
+
+.footerContainer svg {
+    width: 50px;
+}
+
+.email {
+    width: 100px;
+    margin-top: 1%;
+}
+
+.footerH1 {
+    font-size: 300%;
+    font-weight: bold; 
+    text-align: center;
+    color: #F1EFE7;
+    margin: -15px 0px 10px 0px;
+}
+
+.footerContainer input {
+    background-color: #A2747C;
+    border: 2px solid #F1EFE7;
+    color: #F1EFE7;
+    padding: 5px;
+    width: 250px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: Poppins;
+}
+
+.footerContainer input:focus {
+    background-color: #926970;
+    border: 2px solid #F1EFE7;
+    color: #F1EFE7;
+}
+
+.footerContainer input::placeholder {
+    color: #F1EFE7;
+    opacity: 0.5;
+}
+
+.footerP1 {
+    color: #F1EFE7;
+    font-family: Poppins;
+    font-size: 20px;
+}
+
+.footerP2 {
+    color: #F1EFE7;
+    font-family: Poppins;
+}
+
+.footerContainer button {
+    background-color: #F1EFE7;
+    border: 2px solid #F1EFE7;
+    color: #694E52;
+    padding: 5px;
+    width: 130px;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+.footerContainer button:hover {
+    background-color: #926970;
+    border: 2px solid #F1EFE7;
+    color: #F1EFE7;
+}
+
+.footerEmail {
+    display: flex;
+    gap: 10px; 
+    margin: 0px 35% 0px 35%;
+}
